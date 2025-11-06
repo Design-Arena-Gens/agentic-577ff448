@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-background text-foreground font-sans min-h-screen;
+}
+
+a {
+  @apply text-accent;
+}
+
+button:focus-visible,
+input:focus-visible {
+  @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-background;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
